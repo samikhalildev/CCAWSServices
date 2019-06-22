@@ -1,5 +1,9 @@
 .container {
-  padding-top: 50px;
+  padding: 50px;
+}
+
+.top {
+  margin-bottom: 100px;
 }
 
 h2 {
@@ -10,8 +14,17 @@ h2 {
 h3 {
   color: #3e2559;
   font-size: 32px;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 li {
-  text-decoration: none;
+  list-style-type: none;
+  padding: 3px;
+  color: #6b7c94;
+  text-decoration: underline;
+}
+
+a {
 }
