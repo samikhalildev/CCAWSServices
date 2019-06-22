@@ -47,7 +47,6 @@ const loadDataToDOM = () => {
     let column = document.createElement('div');
     let title = document.createElement('h3');
     let ul = document.createElement('ul');
-    let li = document.createElement('li');
 
     column.className = 'col-sm';
 
@@ -55,6 +54,7 @@ const loadDataToDOM = () => {
     column.appendChild(title);
 
     servicesMap[key].forEach(element => {
+      let li = document.createElement('li');
       li.innerText = element.title;
       ul.appendChild(li);
     });
