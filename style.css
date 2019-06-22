@@ -1,0 +1,17 @@
+.container {
+  padding-top: 50px;
+}
+
+h2 {
+  color: #3e2559;
+  font-size: 42px;
+}
+
+h3 {
+  color: #3e2559;
+  font-size: 32px;
+}
+
+li {
+  text-decoration: none;
+}
