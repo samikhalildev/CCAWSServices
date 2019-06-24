@@ -102,19 +102,3 @@ const isEmpty = value => {
     (typeof value === 'string' && value.trim().length === 0)
   );
 };
-
-// UNIT TESTS
-
-unitTests.isEmpty = function(method) {
-  return method('stuff') === true;
-};
-
-unitTests.fetchAPI = function(method) {
-  return method(url) === true;
-};
-
-unitTests.getServiceContent = function(method) {
-  return method('service', 'content') === true;
-};
-
-//console.log(unitTests.isEmpty(isEmpty));
