@@ -14,8 +14,88 @@ body {
   padding: 50px;
 }
 
-.top {
-  margin-bottom: 100px;
+.banner {
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.banner-background {
+  background-color: #6d4b92;
+  height: 400px;
+}
+
+.banner-title {
+  margin-top: 150px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner-text {
+  margin: 115px 50px 0 100px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.banner-text p {
+  padding: 5px;
+}
+
+.breadcrumb {
+  margin-left: 50px;
+  margin-top: 100px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.breadcrumb a,
+.breadcrumb a:hover {
+  color: rgb(199, 199, 199);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active,
+.breadcrumb a:hover,
+.breadcrumb-item.active:hover {
+  color: rgb(223, 223, 223);
+}
+
+.intro {
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.intro h2 {
+  margin-bottom: 50px;
+}
+
+.intro p {
+  color: #3e2559;
+}
+
+h2,
+h3 {
+  color: #3e2559;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+span {
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 header {
@@ -185,25 +265,8 @@ nav #reg-log a:nth-child(2):hover {
   background: #3e2559;
 }
 
-h2,
-h3 {
-  color: #3e2559;
-}
-
-h2 {
-  font-size: 42px;
-  text-align: center;
-}
-
-span {
-  text-align: center;
-}
-
-h3 {
-  font-size: 32px;
-  text-decoration: underline;
-  margin-top: 25px;
-  margin-bottom: 10px;
+.container ul {
+  padding-left: 0;
 }
 
 li {
