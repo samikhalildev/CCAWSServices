@@ -68,7 +68,17 @@ const loadDataToDOM = () => {
 
     servicesMap[key].forEach(element => {
       let li = document.createElement('li');
-      li.innerText = element.title;
+      let a = document.createElement('a');
+
+      let urlPath = element.title
+        .toLowerCase()
+        .split(' ')
+        .join('-');
+
+      a.href = `https://www.cloudconformity.com/conformity-rules/${key}/${urlPath}.html`;
+      a.innerText = element.title;
+
+      li.appendChild(a);
       ul.appendChild(li);
     });
 

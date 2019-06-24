@@ -273,7 +273,8 @@ li {
   list-style-type: none;
 }
 
-.servicesList li {
+.servicesList li,
+.servicesList a {
   padding: 3px;
   color: #6b7c94;
   text-decoration: underline;
