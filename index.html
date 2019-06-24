@@ -9,21 +9,46 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <span id="loading">Loading...</span>
 
+    <header>
+        <div id="logo"> 
+          <a href="https://www.cloudconformity.com" title="Cloud Conformity Homepage"> 
+            <img src="images/cc.jpeg" alt="Cloud Conformity"> 
+          </a> 
+        </div>
+
+        <nav> 
+            <ul> 
+              <li> <a href="https://www.cloudconformity.com/about-us.html" title="About">About</a> </li> 
+              <li> <a href="https://www.cloudconformity.com/frequently-asked-questions.html" title="FAQ">FAQ</a> </li> 
+              <li> <a class="active" href="/" title="Knowledge Base">Knowledge Base</a> </li> 
+              <li> <a href="https://www.cloudconformity.com/pricing.html" title="Pricing">Pricing</a> </li> 
+              <li> <a href="https://www.cloudconformity.com/product.html" title="Product">Product</a> </li> 
+              <li> <a href="https://www.cloudconformity.com/blog/" title="Blog">Blog</a> </li> 
+            </ul> 
+            <div id="reg-log"> 
+              <a href="https://www.cloudconformity.com/sign-in.html" title="Existing user's sign in page">Sign in</a> 
+              <a href="https://www.cloudconformity.com/sign-up.html" title="Sign Up">Free trial</a> 
+            </div> 
+        </nav>
+    </header>
     <div class="container" id="res">
       <div class="row top">
         <div class="col-lg">
           <h2>Conformity Rules - AWS Services</h2>
+          <span id="loading">Loading...</span>
         </div>
       </div>
       <div class="row"/>
     </div>
 
-    <script src="jsonLoader.js"></script>
+    <script src="js/JSONLoader.js"></script>
+    <script src="js/Scroll.js"></script>
   </body>
 </html>

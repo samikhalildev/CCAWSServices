@@ -1,9 +1,188 @@
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7c94;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
 .container {
   padding: 50px;
 }
 
 .top {
   margin-bottom: 100px;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  -webkit-transition: all 0.18s linear;
+  -moz-transition: all 0.18s linear;
+  -ms-transition: all 0.18s linear;
+  -o-transition: all 0.18s linear;
+  transition: all 0.18s linear;
+}
+
+header.scroll {
+  height: 90px;
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
+}
+
+header #logo {
+  width: 300px;
+  height: 61px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  margin: 40px 0 0 50px;
+  background: url('./images/cc.jpeg') no-repeat 0 50%;
+  background-size: auto 100%;
+  -webkit-transition: all 0.18s linear;
+  -moz-transition: all 0.18s linear;
+  -ms-transition: all 0.18s linear;
+  -o-transition: all 0.18s linear;
+  transition: all 0.18s linear;
+}
+
+header #logo a {
+  width: 281px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header #logo img {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+header.scroll #logo {
+  width: 281px;
+  height: 55px;
+  margin: 17px 0 0 50px;
+}
+
+header.scroll #logo a {
+  width: 255px;
+}
+
+nav {
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 101;
+  margin: 53px 50px 0 0;
+  font-family: 'Volte-Medium';
+  -webkit-transition: all 0.18s linear;
+  -moz-transition: all 0.18s linear;
+  -ms-transition: all 0.18s linear;
+  -o-transition: all 0.18s linear;
+  transition: all 0.18s linear;
+}
+
+header.scroll nav {
+  margin: 30px 50px 0 0;
+}
+
+nav ul {
+  height: 30px;
+  float: left;
+  position: relative;
+  margin-top: 5px;
+  border-right: 1px solid #dbdde4;
+}
+
+nav li {
+  float: left;
+  margin-right: 50px;
+}
+
+nav li a {
+  color: #6b7c94;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.18s linear;
+  -moz-transition: all 0.18s linear;
+  -ms-transition: all 0.18s linear;
+  -o-transition: all 0.18s linear;
+  transition: all 0.18s linear;
+}
+
+nav li a:active,
+nav li a:hover,
+.active {
+  color: #3e2559;
+  text-decoration: none;
+}
+
+nav #reg-log {
+  float: left;
+}
+
+nav #reg-log a {
+  float: left;
+  position: relative;
+  z-index: 10;
+  color: #6b7c94;
+  font-size: 14px;
+  letter-spacing: -0.019em;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.18s linear;
+  -moz-transition: all 0.18s linear;
+  -ms-transition: all 0.18s linear;
+  -o-transition: all 0.18s linear;
+  transition: all 0.18s linear;
+}
+
+nav #reg-log a:nth-child(1) {
+  margin: 8px 26px 0 26px;
+  padding: 4;
+}
+
+nav #reg-log a:nth-child(1):hover {
+  color: #3e2559;
+}
+
+nav #reg-log a:nth-child(2) {
+  width: 87px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #c6366e;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+nav #reg-log a:nth-child(2):hover {
+  background: #3e2559;
 }
 
 h2,
@@ -29,6 +208,9 @@ h3 {
 
 li {
   list-style-type: none;
+}
+
+.servicesList li {
   padding: 3px;
   color: #6b7c94;
   text-decoration: underline;

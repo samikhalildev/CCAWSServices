@@ -60,6 +60,7 @@ const loadDataToDOM = () => {
     let title = document.createElement('h3');
     let ul = document.createElement('ul');
 
+    ul.className = 'servicesList';
     column.className = 'col-sm';
 
     title.innerText = key;
